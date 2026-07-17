@@ -5,6 +5,7 @@ import sys
 def list_score(argc: int) -> list[int]:
     score = []
     i = 1
+
     while i < argc:
         try:
             score.append(int(sys.argv[i]))
@@ -16,6 +17,7 @@ def list_score(argc: int) -> list[int]:
 
 def score_analytics() -> None:
     score = list_score(len(sys.argv))
+
     if len(score) == 0:
         print("No scores provided. Usage: python3 ft_score_analytics.py "
               "<score1> <score2> ...")

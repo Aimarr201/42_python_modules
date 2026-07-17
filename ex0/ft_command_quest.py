@@ -4,6 +4,7 @@ import sys
 
 def command() -> None:
     argc = len(sys.argv)
+
     print(f"Program name: {sys.argv[0]}")
     if argc == 1:
         print("No arguments provided!")

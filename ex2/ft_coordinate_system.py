@@ -7,6 +7,7 @@ def get_player_pos() -> tuple[float, float, float]:
         coordinates = input("Enter new coordinates as floats "
                             "in format 'x,y,z': ")
         splited_coordinates = coordinates.split(",")
+
         if len(splited_coordinates) == 3:
             try:
                 x = float(splited_coordinates[0])
@@ -31,8 +32,7 @@ def coordinate_system() -> None:
     print(f"Got a first tuple: {coordinates}")
     print(f"It includes: X={x1}, Y={y1}, Z={z1}")
     distance = round((math.sqrt(x1**2 + y1**2 + z1**2)), 4)
-    print(f"Distance to center: {distance}")
-    print("")
+    print(f"Distance to center: {distance}\n")
 
     print("Get a second set of coordinates")
     coordinates = get_player_pos()

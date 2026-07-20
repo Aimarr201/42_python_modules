@@ -5,7 +5,7 @@ import sys
 def inventory_system() -> None:
     inventory = {}
     argc = len(sys.argv)
-    i = 0
+    i = 1
 
     while i < argc:
         args = sys.argv[i]
@@ -22,6 +22,7 @@ def inventory_system() -> None:
                     print(f"Quantity error for '{item}': {e}")
         else:
             print(f"Error - invalid parameter '{args}'")
+        i += 1
 
     if not inventory:
         print("Inventory is empty. Add something!")

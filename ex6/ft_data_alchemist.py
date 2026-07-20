@@ -22,5 +22,5 @@ def data_alchemist() -> None:
 
 
 if __name__ == "__main__":
-    print("=== Game Data Alchemist ===/n")
+    print("=== Game Data Alchemist ===\n")
     data_alchemist()

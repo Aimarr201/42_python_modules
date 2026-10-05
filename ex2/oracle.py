@@ -61,10 +61,8 @@ def main():
     else:
         print("  Zion Network: [MISSING] ZION_ENDPOINT not set")
 
-    # Security check
     print("\nEnvironment security check:")
 
-    # Check for hardcoded secrets in source file
     source_file = os.path.abspath(__file__)
     with open(source_file, 'r') as f:
         source = f.read()

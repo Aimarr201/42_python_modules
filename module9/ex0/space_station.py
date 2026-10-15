@@ -45,7 +45,7 @@ def main() -> None:
     except ValidationError as e:
         print("Expected validation error:")
         for error in e.errors():
-            print(error["msg"])
+            print(f"{error["loc"][0]}: {error["msg"]}")
 
     try:
         invalid_station = SpaceStation(
@@ -60,7 +60,7 @@ def main() -> None:
     except ValidationError as e:
         print("Expected validation error:")
         for error in e.errors():
-            print(error["msg"])
+            print(f"{error["loc"][0]}: {error["msg"]}")
 
 
 if __name__ == "__main__":
